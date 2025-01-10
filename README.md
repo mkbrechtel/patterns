@@ -1,4 +1,4 @@
-# Cute patterns!
+# Cute patterns! ✨
 
 This repo describes cute patterns to successfully work and get stuff done in the context of the projects of [me](https://mkbrechtel.dev), my team at the IDMKD and other projects.
 
