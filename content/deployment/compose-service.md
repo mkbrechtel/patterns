@@ -13,7 +13,9 @@ This pattern describes how to structure and manage services running with docker-
 ```bash
 /srv/{hostname}/          # Root directory for the service
 ├── compose.yml          # Main compose file (new standard name)
+├── compose.override.yml # Proxy network integration
 ├── .env                 # Environment variables
+├── .gitignore          # Git ignore file
 └── SERVICE.md           # Service documentation
 ```
 
@@ -51,15 +53,34 @@ services:
     volumes:
       - ./config:/config:ro
       - ./data:/data
-    networks:
-      - proxy
-      - app_net
+
+networks:
+  default:
+    driver: bridge
+```
+
+### Proxy Integration
+compose.override.yml:
+```yaml
+version: '3.9'
 
 networks:
   proxy:
     external: true
-  app_net:
-    driver: bridge
+
+services:
+  app:
+    networks:
+      - proxy
+      - default
+```
+
+### Git Configuration
+If your service is stored in a Git repo, you should ignore the compose.override.yml and SERVICE.md.
+.gitignore:
+```
+compose.override.yml
+SERVICE.md
 ```
 
 ## 🔐 Security Practices
@@ -68,6 +89,7 @@ networks:
 - Read-only mounts where possible
 - Limit network exposure
 - Run services as non-root user
+- Only expose necessary services to proxy network
 
 ## 🔄 Operations
 
@@ -89,8 +111,10 @@ docker compose up -d
 - Using latest tag
 - Storing secrets in compose.yml
 - Direct modification of container data
+- Exposing services to proxy network unnecessarily
 
 ## 💡 Tips
 - Document service specifics in SERVICE.md
 - Use .env-File for configuration
 - Enable health checks
+- Keep proxy network configuration separate in override file
