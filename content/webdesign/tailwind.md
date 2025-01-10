@@ -2,17 +2,17 @@
 
 WIP
 
-## 📋 Overview
+## Overview 📋
 This pattern describes how to structure and implement web designs using Tailwind CSS, focusing on maintainable and consistent styling approaches.
 
-## 🎯 Goals
+## Goals 🎯
 - Consistent design system implementation
 - Reusable components
 - Responsive layouts
 - Performance optimized styling
 - Maintainable code structure
 
-## 🔧 Core Principles
+## Core Principles 🔧
 
 ### Component-First Design
 - Build reusable components

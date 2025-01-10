@@ -1,4 +1,4 @@
-# 🌐 Host Traefik Pattern
+# Host Traefik Pattern 🌐
 
 Host-based Traefik pattern provides centralized HTTPS termination and routing for services on a single host without requiring Docker socket access.
 
