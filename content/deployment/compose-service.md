@@ -12,8 +12,8 @@ This pattern describes how to structure and manage services running with docker-
 ## 📂 Directory Structure
 ```bash
 /srv/{hostname}/          # Root directory for the service
-├── compose.yml          # Main compose file (new standard name)
-├── compose.override.yml # Proxy network integration
+├── compose.yaml          # Main compose file (new standard name)
+├── compose.override.yaml # Proxy network integration
 ├── .env                 # Environment variables
 ├── .gitignore          # Git ignore file
 └── SERVICE.md           # Service documentation
@@ -39,7 +39,7 @@ cd /srv/hostname}
 ```
 
 ### Base Compose File
-compose.yml:
+compose.yaml:
 ```yaml
 version: '3.9'
 
@@ -60,7 +60,7 @@ networks:
 ```
 
 ### Proxy Integration
-compose.override.yml:
+compose.override.yaml:
 ```yaml
 version: '3.9'
 
@@ -76,10 +76,10 @@ services:
 ```
 
 ### Git Configuration
-If your service is stored in a Git repo, you should ignore the compose.override.yml and SERVICE.md.
+If your service is stored in a Git repo, you should ignore the compose.override.yaml and SERVICE.md.
 .gitignore:
 ```
-compose.override.yml
+compose.override.yaml
 SERVICE.md
 ```
 
@@ -109,7 +109,7 @@ docker compose up -d
 
 ## ⚠️ Anti-patterns
 - Using latest tag
-- Storing secrets in compose.yml
+- Storing secrets in compose.yaml
 - Direct modification of container data
 - Exposing services to proxy network unnecessarily
 
