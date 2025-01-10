@@ -1,4 +1,4 @@
-package main
+package web
 
 import (
     "fmt"
@@ -6,7 +6,7 @@ import (
     "patterns.mkbrechtel.dev/content"
 )
 
-func main() {
+func Webserver() {
     mux := http.NewServeMux()
     fileServer := http.FileServer(http.FS(content.ContentFiles))
     mux.Handle("/", fileServer)
