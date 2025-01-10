@@ -79,21 +79,23 @@ Patterns are more than just technical solutions - they represent a holistic appr
 
 ### Code Examples
 ````markdown
-```language
+```python
 // Include well-commented code examples
 // Use appropriate syntax highlighting
+# Simple hello world example
+print("Hello World!")
 ```
 ````
 
 ### Diagrams
-```markdown
 Use Mermaid or similar when helpful:
+````markdown
 
 ```mermaid
 graph LR
     A[Problem] --> B[Pattern] --> C[Solution]
 ```
-```
+````
 
 ## Anti-patterns to Avoid ⚠️
 - ❌ Vague or abstract descriptions
