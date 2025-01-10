@@ -1,6 +1,6 @@
 package main
 
-import "patterns.mkbrechtel.dev/srv/web"
+import "patterns.mkbrechtel.dev/src/web"
 
 func main() {
 	web.Webserver()
