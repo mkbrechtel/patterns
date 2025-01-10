@@ -1,3 +1,10 @@
+# Ideas! ⚡
+
+## Categories
+- 🤝 Collaboration & Communication
+- 💻 Development Practices
+- 📊 Project Management
+- 🎯 Process & Workflows
 
 ## Proposed patterns
 - 🔄 Deployment Pipeline
