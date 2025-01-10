@@ -69,19 +69,16 @@ Patterns are more than just technical solutions - they represent a holistic appr
 ## Writing Guidelines 📝
 
 ### Style
-```markdown
 - Use clear, concise language
 - Include practical examples
 - Add relevant emojis for visual appeal
 - Use headers for proper structure
 - Include code blocks with syntax highlighting
-```
 
 ### Code Examples
+Include well-commented code examples and use appropriate syntax highlighting
 ````markdown
 ```python
-// Include well-commented code examples
-// Use appropriate syntax highlighting
 # Simple hello world example
 print("Hello World!")
 ```
