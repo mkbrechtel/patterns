@@ -26,24 +26,24 @@ Implementation of Cuteness varies when it comes to different areas. This is a me
 - Balance cuteness with professionalism
 - Keep it authentic and genuine
 
-### ✨ Examples
+## ✨ Examples
 
 The key to implementing cuteness is to identify areas where complexity, stress, or friction can be reduced through thoughtful design and human-centered approaches. By making systems and processes more approachable and user-friendly, we create environments that promote wellbeing and productivity. Here are some examples across different domains:
 
-#### 🐳 Infrastructure
+### 🐳 Infrastructure
 - Using friendly names for servers (e.g., "coral", "dolphin")
 - Clear and simple folder structures
 - Well-documented setup procedures
 - Easy-to-remember command aliases
 
-#### 🌈 Development
+### 🌈 Development
 - Clean and readable code
 - Helpful error messages
 - User-friendly interfaces
 - Simple deployment processes
 
-#### 🦄 Communication
-- Emoji usage in appropriate contexts
+### 🦄 Communication
 - Clear and friendly documentation
 - Welcoming onboarding processes
 - Supportive feedback mechanisms
+- Emoji usage in appropriate contexts
