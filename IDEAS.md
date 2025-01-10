@@ -13,11 +13,14 @@
 - Database Management 🗄️
 - Change Management 📝
 - Gitflow
+- Documentation Pattern 📚 
+- Knowledge Sharing Pattern 🤝
 
 ## Common Pattern structure
 
 - Overview 📋
 - Goals 🎯
+- Implementation 🛠️
 - Security Considerations 🔐
 - Anti-patterns to Avoid ⚠️
 - Best Practices 💡
