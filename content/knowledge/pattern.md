@@ -136,7 +136,7 @@ graph LR
 - [ ] Check for completeness
 
 ## Related Patterns 🔗
-- [Cuteness Pattern🌸](../practice/cuteness.md)
+- [Cuteness Pattern 🌸](../practice/cuteness.md)
 
 ## Example Pattern Template 📄
 
