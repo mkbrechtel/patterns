@@ -7,7 +7,11 @@ export default defineConfig({
   site: "https://patterns.mkbrechtel.dev",
   integrations: [
     starlight({
-      title: "Cute Patterns! 💠",
+      title: "Cute Patterns!",
+      logo: {
+        src: './public/emoji_u1f4a0.svg',
+      },
+      favicon: '/emoji_u1f4a0.svg',
       social: {
         github: "https://github.com/mkbrechtel/patterns",
       },
@@ -17,10 +21,25 @@ export default defineConfig({
           link: "/",
         },
         {
+          label: "Knowledge",
+          autogenerate: { directory: "knowledge" },
+        },
+        {
+          label: "Practices",
+          autogenerate: { directory: "practice" },
+        },
+        {
+          label: "Management",
+          autogenerate: { directory: "management" },
+        },
+        {
           label: "Deployment",
           autogenerate: { directory: "deployment" },
         },
       ],
+      // editLink: {
+      //   baseUrl: 'https://github.com/mkbrechtel/patterns/edit/main/',
+      // },
     }),
   ],
 });
