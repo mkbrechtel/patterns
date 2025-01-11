@@ -14,9 +14,9 @@ This pattern describes how to structure and manage services running with docker-
 /srv/{hostname}/          # Root directory for the service
 ├── compose.yaml          # Main compose file (new standard name)
 ├── compose.override.yaml # Proxy network integration
-├── .env                 # Environment variables
-├── .gitignore          # Git ignore file
-└── SERVICE.md           # Service documentation
+├── .env                  # Environment variables
+├── .gitignore            # Git ignore file
+└── SERVICE.md            # Service documentation
 ```
 
 ## Base Requirements 🛠️
@@ -35,7 +35,7 @@ sudo apt install docker.io docker-compose-plugin apparmor
 ### Service Directory
 ```bash
 mkdir /srv/{hostname}
-cd /srv/hostname}
+cd /srv/{hostname}
 ```
 
 ### Base Compose File
@@ -115,6 +115,6 @@ docker compose up -d
 
 ## Tips 💡
 - Document service specifics in SERVICE.md
-- Use .env-File for configuration
+- Use `.env`-File for configuration
 - Enable health checks
 - Keep proxy network configuration separate in override file
