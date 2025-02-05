@@ -83,7 +83,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0
 
 ## Acknowledgements
 
-It has now been over ten year since the publication of my book, *Domain-­‐Driven Design,* *Tackling Complexity in the Heart of Software \(* or “The Big Blue Book”, as some people have taken to calling it\). In that decade, the fundamentals discussed in the book haven’t changed much, but a *lot * has changed about how we build software. DDD has stayed relevant because smart and innovative people have shaken things up repeatedly. I want to thank those people. 
+It has now been over ten year since the publication of my book, *Domain-Driven Design,* *Tackling Complexity in the Heart of Software \(* or “The Big Blue Book”, as some people have taken to calling it\). In that decade, the fundamentals discussed in the book haven’t changed much, but a *lot * has changed about how we build software. DDD has stayed relevant because smart and innovative people have shaken things up repeatedly. I want to thank those people. 
 
 Let me start with Greg Young, Udi Dahan and the people inspired by them, for CQRS and Event Sourcing. These are now quite mainstream options for the architecture of a DDD 
 
@@ -93,13 +93,13 @@ Since then, there have been several interesting technologies and frameworks that
 
 I also want to thank the people and communities that have revolutionized our technical ecosystem in recent years in ways that make DDD much more fun and practical. Most of these people have minimal interest in DDD, but their work has benefited us tremendously. 
 
-I’m particularly thinking of the freedom NoSQL is bringing us, the reduced syntactical-­‐noise of new programming languages \(some functional\), and the relentless drive toward lighter technical frameworks and unintrusive, decoupled libraries. The technology of a decade ago was complicated and heavy, and made DDD even more difficult. There is bad new technology too, of course, but the trend is good. So I extend a special thanks to all those who have contributed to this trend, though you may never have heard of DDD. 
+I’m particularly thinking of the freedom NoSQL is bringing us, the reduced syntactical-noise of new programming languages \(some functional\), and the relentless drive toward lighter technical frameworks and unintrusive, decoupled libraries. The technology of a decade ago was complicated and heavy, and made DDD even more difficult. There is bad new technology too, of course, but the trend is good. So I extend a special thanks to all those who have contributed to this trend, though you may never have heard of DDD. 
 
 Next, I want to thank those who have written books about DDD. The first book about DDD 
 
-after mine was by Jimmy Nilsson. With one book, you have a book. With two, you have a topic. Next, InfoQ published *DDD Quickly*, which, because of its brevity, its availability as a free download and the reach of InfoQ, gave a lot of people their first taste of the topic. The years went by, and there were many valuable blog articles and other short-­‐form writings. 
+after mine was by Jimmy Nilsson. With one book, you have a book. With two, you have a topic. Next, InfoQ published *DDD Quickly*, which, because of its brevity, its availability as a free download and the reach of InfoQ, gave a lot of people their first taste of the topic. The years went by, and there were many valuable blog articles and other short-form writings. 
 
-There were also specialty books such as *DDD with Naked Objects*. And I particularly want to thank the indispensable Martin Fowler, who has helped to clearly communicate the concepts of DDD as wel as often providing the definitive documentation of emerging patterns. Just last year, Vaughn Vernon published the most ambitious book since my own, *Implementing* *Domain-­‐Driven Design* \(which some seem to be calling “The Big Red Book”\). 
+There were also specialty books such as *DDD with Naked Objects*. And I particularly want to thank the indispensable Martin Fowler, who has helped to clearly communicate the concepts of DDD as wel as often providing the definitive documentation of emerging patterns. Just last year, Vaughn Vernon published the most ambitious book since my own, *Implementing* *Domain-Driven Design* \(which some seem to be calling “The Big Red Book”\). 
 
 I feel a kind of despair over the inevitability that I wil leave out many people who made significant contributions, and I am genuinely sorry about that. Let me at least give a blanket thank you to the people who have pushed DDD out into the public view and to those who have pushed DDD into quiet corners of organizations. It takes thousands of champions for a software philosophy to have any impact. 
 
@@ -139,7 +139,7 @@ A description of a boundary \(typically a subsystem, or the work of a particular
 
 ## I. Putting the Model to Work
 
-Domain-­‐Driven Design is an approach to the development of complex software in which we: 
+Domain-Driven Design is an approach to the development of complex software in which we: 
 
 1. Focus on the *core domain*. 
 
@@ -147,9 +147,9 @@ Domain-­‐Driven Design is an approach to the development of complex software 
 
 3. Speak a *ubiquitous language* within an explicitly *bounded context*. 
 
-This three-­‐point summary of DDD depends on the definition of the terms, which are defined in this booklet. 
+This three-point summary of DDD depends on the definition of the terms, which are defined in this booklet. 
 
-Many projects do modeling work without getting much real benefit in the end. The patterns of DDD distil successful practices from projects where dramatic benefits have come from modeling. Taken together, they lay out a quite different approach to modeling and software development that runs from fine details to high-­‐level vision. Rigorous modeling conventions must be balanced with free exploration of models in col aboration with non-­‐technical people. 
+Many projects do modeling work without getting much real benefit in the end. The patterns of DDD distil successful practices from projects where dramatic benefits have come from modeling. Taken together, they lay out a quite different approach to modeling and software development that runs from fine details to high-level vision. Rigorous modeling conventions must be balanced with free exploration of models in col aboration with non-technical people. 
 
 Tactics and strategy must be combined to succeed, and DDD addresses both tactical and strategic design. 
 
@@ -176,11 +176,11 @@ Therefore: * *
 
 *—Lewis Carrol, “Poeta Fit, Non Nascitur” *
 
-To create a supple, knowledge-­‐rich design calls for a versatile, shared team language, and a lively experimentation with language that seldom happens on software projects. 
+To create a supple, knowledge-rich design calls for a versatile, shared team language, and a lively experimentation with language that seldom happens on software projects. 
 
 Within a single *bounded context*, language can be fractured in ways that undermine efforts to apply sophisticated modeling. If the model is only used to draw UML diagrams for the technical members of the team, then it is not contributing to the creative col aboration at the heart of DDD. 
 
-Domain experts use their jargon while technical team members have their own language tuned for discussing the domain in terms of design. The terminology of day-­‐to-­‐day discussions is disconnected from the terminology embedded in the code \(ultimately the most important product of a software project\). And even the same person uses different language in speech and in writing, so that the most incisive expressions of the domain often emerge in a transient form that is never captured in the code or even in writing. 
+Domain experts use their jargon while technical team members have their own language tuned for discussing the domain in terms of design. The terminology of day-to-day discussions is disconnected from the terminology embedded in the code \(ultimately the most important product of a software project\). And even the same person uses different language in speech and in writing, so that the most incisive expressions of the domain often emerge in a transient form that is never captured in the code or even in writing. 
 
 Translation blunts communication and makes knowledge crunching anemic. 
 
@@ -206,13 +206,13 @@ Therefore:
 
 *Once a bounded context has been defined, we must keep it sound. *
 
-When a number of people are working in the same bounded context, there is a strong tendency for the model to fragment. The bigger the team, the bigger the problem, but as few as three or four people can encounter serious problems. Yet breaking down the system into ever-­‐smaller contexts eventually loses a valuable level of integration and coherency. 
+When a number of people are working in the same bounded context, there is a strong tendency for the model to fragment. The bigger the team, the bigger the problem, but as few as three or four people can encounter serious problems. Yet breaking down the system into ever-smaller contexts eventually loses a valuable level of integration and coherency. 
 
 Therefore: 
 
 **Institute a process of merging all code and other implementation artifacts frequently, with** **automated tests to flag fragmentation quickly. Relentlessly exercise the ubiquitous** **language to hammer out a shared view of the model as the concepts evolve in different** **people’s heads. **
 
-### Model-­‐Driven Design
+### Model-Driven Design
 
 *Tightly relating the code to an underlying model gives the code meaning and makes the* *model relevant. *
 
@@ -220,7 +220,7 @@ If the design, or some central part of it, does not map to the domain model, tha
 
 Draw from the model the terminology used in the design and the basic assignment of responsibilities. The code becomes an expression of the model, so a change to the code may be a change to the model. Its effect must ripple through the rest of the project’s activities accordingly. 
 
-To tie the implementation slavishly to a model usually requires software development tools and languages that support a modeling paradigm, such as object-­‐oriented programming. 
+To tie the implementation slavishly to a model usually requires software development tools and languages that support a modeling paradigm, such as object-oriented programming. 
 
 Therefore:** **
 
@@ -228,9 +228,9 @@ Therefore:** **
 
 **Demand a single model that serves both purposes well, in addition to supporting a fluent** **ubiquitous language. **
 
-### Hands-­‐on Modelers
+### Hands-on Modelers
 
-If the people who write the code do not feel responsible for the model, or don’t understand how to make the model work for an application, then the model has nothing to do with the software. If developers don’t realize that changing code changes the model, then their refactoring wil weaken the model rather than strengthen it. Meanwhile, when a modeler is separated from the implementation process, he or she never acquires, or quickly loses, a feel for the constraints of implementation. The basic constraint of model-­‐driven design—that the model supports an effective implementation and abstracts key insights into the domain—is half-­‐gone, and the resulting models wil be impractical. Finally, the knowledge and skil s of experienced designers won’t be transferred to other developers if the division of labor prevents the kind of col aboration that conveys the subtleties of coding a model-­‐driven design. 
+If the people who write the code do not feel responsible for the model, or don’t understand how to make the model work for an application, then the model has nothing to do with the software. If developers don’t realize that changing code changes the model, then their refactoring wil weaken the model rather than strengthen it. Meanwhile, when a modeler is separated from the implementation process, he or she never acquires, or quickly loses, a feel for the constraints of implementation. The basic constraint of model-driven design—that the model supports an effective implementation and abstracts key insights into the domain—is half-gone, and the resulting models wil be impractical. Finally, the knowledge and skil s of experienced designers won’t be transferred to other developers if the division of labor prevents the kind of col aboration that conveys the subtleties of coding a model-driven design. 
 
 Therefore: 
 
@@ -246,13 +246,13 @@ Sophisticated domain models seldom turn out useful except when developed through
 
 ## II. Building Blocks of a Model-Driven Design
 
-These patterns cast widely held best practices of object-­‐oriented design in the light of domain-­‐driven design. They guide decisions to clarify the model and to keep the model and implementation aligned with each other, each reinforcing the other’s effectiveness. Careful crafting the details of individual model elements gives developers a steady platform from which to explore models and to keep them in close correspondence with the implementation. 
+These patterns cast widely held best practices of object-oriented design in the light of domain-driven design. They guide decisions to clarify the model and to keep the model and implementation aligned with each other, each reinforcing the other’s effectiveness. Careful crafting the details of individual model elements gives developers a steady platform from which to explore models and to keep them in close correspondence with the implementation. 
 
 ### Layered Architecture
 
-In an object-­‐oriented program, UI, database, and other support code often gets written directly into the business objects. Additional business logic is embedded in the behavior of UI widgets and database scripts. This happens because it is the easiest way to make things work, in the short run. 
+In an object-oriented program, UI, database, and other support code often gets written directly into the business objects. Additional business logic is embedded in the behavior of UI widgets and database scripts. This happens because it is the easiest way to make things work, in the short run. 
 
-When the domain-­‐related code is diffused through such a large amount of other code, it becomes extremely difficult to see and to reason about. Superficial changes to the UI can actually change business logic. To change a business rule may require meticulous tracing of UI code, database code, or other program elements. Implementing coherent, model-­‐driven objects becomes impractical. Automated testing is awkward. With all the technologies and logic involved in each activity, a program must be kept very simple or it becomes impossible to understand. 
+When the domain-related code is diffused through such a large amount of other code, it becomes extremely difficult to see and to reason about. Superficial changes to the UI can actually change business logic. To change a business rule may require meticulous tracing of UI code, database code, or other program elements. Implementing coherent, model-driven objects becomes impractical. Automated testing is awkward. With all the technologies and logic involved in each activity, a program must be kept very simple or it becomes impossible to understand. 
 
 Therefore: 
 
@@ -288,7 +288,7 @@ However, if we think of this category of object as just the absence of identity,
 
 Therefore: 
 
-**When you care only about the attributes and logic of an element of the model, classify it as** **a value object. Make it express the meaning of the attributes it conveys and give it related** **functionality. Treat the value object as immutable. Make all operations Side-­‐effect-­‐free** **Functions that don’t depend on any mutable state. Don’t give a value object any identity** **and avoid the design complexities necessary to maintain entities. **
+**When you care only about the attributes and logic of an element of the model, classify it as** **a value object. Make it express the meaning of the attributes it conveys and give it related** **functionality. Treat the value object as immutable. Make all operations Side-effect-free** **Functions that don’t depend on any mutable state. Don’t give a value object any identity** **and avoid the design complexities necessary to maintain entities. **
 
 ### Domain Events \*
 
@@ -302,7 +302,7 @@ Therefore:
 
 **Model information about activity in the domain as a series of discrete events. Represent** **each event as a domain object. These are distinct from system events that reflect activity** **within the software itself, although often a system event is associated with a domain** **event, either as part of a response to the domain event or as a way of carrying information** **about the domain event into the system. **
 
-**A domain event is a full-­‐fledged part of the domain model, a representation of something** **that happened in the domain. Ignore irrelevant domain activity while making explicit the** **events that the domain experts want to track or be notified of, or which are associated** **with state change in the other model objects. * ***
+**A domain event is a full-fledged part of the domain model, a representation of something** **that happened in the domain. Ignore irrelevant domain activity while making explicit the** **events that the domain experts want to track or be notified of, or which are associated** **with state change in the other model objects. * ***
 
 In a distributed system, the state of an entity can be inferred from the domain events currently known to a particular node, allowing a coherent model in the absence of full information about the system as a whole. 
 
@@ -312,7 +312,7 @@ Domain events are ordinarily immutable, as they are a record of something in the
 
 Sometimes, it just isn’t a thing. 
 
-Some concepts from the domain aren’t natural to model as objects. Forcing the required domain functionality to be the responsibility of an entity or value either distorts the definition of a model-­‐based object or adds meaningless artificial objects. 
+Some concepts from the domain aren’t natural to model as objects. Forcing the required domain functionality to be the responsibility of an entity or value either distorts the definition of a model-based object or adds meaningless artificial objects. 
 
 Therefore: 
 
@@ -321,7 +321,7 @@ Therefore:
 
 ### Modules
 
-Everyone uses modules, but few treat them as a ful -­‐fledged part of the model. Code gets broken down into all sorts of categories, from aspects of the technical architecture to developers’ work assignments. Even developers who refactor a lot tend to content themselves with modules conceived early in the project. 
+Everyone uses modules, but few treat them as a ful -fledged part of the model. Code gets broken down into all sorts of categories, from aspects of the technical architecture to developers’ work assignments. Even developers who refactor a lot tend to content themselves with modules conceived early in the project. 
 
 Explanations of coupling and cohesion tend to make them sound like technical metrics, to be judged mechanically based on the distributions of associations and interactions. Yet *it isn’t* *just code being divided into modules, but also concepts*. There is a limit to how many things a person can think about at once \(hence low coupling\). Incoherent fragments of ideas are as hard to understand as an undifferentiated soup of ideas \(hence high cohesion\). 
 
@@ -331,7 +331,7 @@ Therefore:
 
 **Give the modules names that become part of the ubiquitous language. Modules are part of** **the model and their names should reflect insight into the domain. **
 
-**This often yields low coupling between modules, but if it doesn’t look for a way to change** **the model to disentangle the concepts, or an overlooked concept that might be the basis of** **a module that would bring the elements together in a meaningful way. Seek low coupling** **in the sense of concepts that can be understood and reasoned about independently. Refine** **the model until it partitions according to high-­‐level domain concepts and the corresponding** **code is decoupled as well. **
+**This often yields low coupling between modules, but if it doesn’t look for a way to change** **the model to disentangle the concepts, or an overlooked concept that might be the basis of** **a module that would bring the elements together in a meaningful way. Seek low coupling** **in the sense of concepts that can be understood and reasoned about independently. Refine** **the model until it partitions according to high-level domain concepts and the corresponding** **code is decoupled as well. **
 
 \(aka Packages\) 
 
@@ -361,7 +361,7 @@ When these design decisions are not being guided wel by the aggregate boundaries
 
 Proliferation of traversable associations used only for finding things muddles the model. In mature models, queries often express domain concepts. Yet queries can cause problems. 
 
-The sheer technical complexity of applying most database access infrastructure quickly swamps the client code, which leads developers to dumb-­‐down the domain layer, which makes the model irrelevant. 
+The sheer technical complexity of applying most database access infrastructure quickly swamps the client code, which leads developers to dumb-down the domain layer, which makes the model irrelevant. 
 
 A query framework may encapsulate most of that technical complexity, enabling developers to pul the exact data they need from the database in a more automated or declarative way, but that only solves part of the problem. 
 
@@ -371,7 +371,7 @@ Domain logic moves into queries and application layer code, and the entities and
 
 Therefore: 
 
-**For each type of aggregate that needs global access, create a service that can provide the** **illusion of an in-­‐memory collection of all objects of that aggregate’s root type. Set up access** **through a well-­‐known global interface. Provide methods to add and remove objects, which** **will encapsulate the actual insertion or removal of data in the data store. Provide methods** **that select objects based on criteria meaningful to domain experts. Return fully** **instantiated objects or collections of objects whose attribute values meet the criteria,** **thereby encapsulating the actual storage and query technology, or return proxies that give** **the illusion of fully instantiated aggregates in a lazy way. Provide repositories only for** **aggregate roots that actually need direct access. Keep application logic focused on the** **model, delegating all object storage and access to the repositories. **
+**For each type of aggregate that needs global access, create a service that can provide the** **illusion of an in-memory collection of all objects of that aggregate’s root type. Set up access** **through a well-known global interface. Provide methods to add and remove objects, which** **will encapsulate the actual insertion or removal of data in the data store. Provide methods** **that select objects based on criteria meaningful to domain experts. Return fully** **instantiated objects or collections of objects whose attribute values meet the criteria,** **thereby encapsulating the actual storage and query technology, or return proxies that give** **the illusion of fully instantiated aggregates in a lazy way. Provide repositories only for** **aggregate roots that actually need direct access. Keep application logic focused on the** **model, delegating all object storage and access to the repositories. **
 
 ### Factories
 
@@ -399,15 +399,15 @@ Equally important, the design must serve the developer working to change it. To 
 - Reducing the cost of change 
 - Creating software developers to work with 
 
-### Intention-­‐Revealing Interfaces
+### Intention-Revealing Interfaces
 
-If a developer must consider the implementation of a component in order to use it, the value of encapsulation is lost. If someone other than the original developer must infer the purpose of an object or operation based on its implementation, that new developer may infer a purpose that the operation or class fulfil s only by chance. If that was not the intent, the code may work for the moment, but the conceptual basis of the design wil have been corrupted, and the two developers wil be working at cross-­‐purposes. 
+If a developer must consider the implementation of a component in order to use it, the value of encapsulation is lost. If someone other than the original developer must infer the purpose of an object or operation based on its implementation, that new developer may infer a purpose that the operation or class fulfil s only by chance. If that was not the intent, the code may work for the moment, but the conceptual basis of the design wil have been corrupted, and the two developers wil be working at cross-purposes. 
 
 Therefore: 
 
 **Name classes and operations to describe their effect and purpose, without reference to the** **means by which they do what they promise. This relieves the client developer of the need** **to understand the internals. These names should conform to the ubiquitous language so** **that team members can quickly infer their meaning. Write a test for a behavior before** **creating it, to force your thinking into client developer mode. **
 
-### Side-­‐Effect-­‐Free Functions
+### Side-Effect-Free Functions
 
 Interactions of multiple rules or compositions of calculations become extremely difficult to predict. The developer calling an operation must understand its implementation and the implementation of all its delegations in order to anticipate the result. The usefulness of any abstraction of interfaces is limited if the developers are forced to pierce the veil. Without safely predictable abstractions, the developers must limit the combinatory explosion, placing a low ceiling on the richness of behavior that is feasible to build. 
 
@@ -415,7 +415,7 @@ Therefore:
 
 **Place as much of the logic of the program as possible into functions, operations that return** **results with no observable side effects. Strictly segregate commands \(methods which result** **in modifications to observable state\) into very simple operations that do not return domain** **information. Further control side effects by moving complex logic into value objects when a** **concept fitting the responsibility presents itself. **
 
-**All operations of a value object should be side-­‐effect-­‐free functions. **
+**All operations of a value object should be side-effect-free functions. **
 
 ### Assertions
 
@@ -423,7 +423,7 @@ When the side effects of operations are only defined implicitly by their impleme
 
 Therefore: 
 
-**State post-­‐conditions of operations and invariants of classes and aggregates. If assertions** **cannot be coded directly in your programming language, write automated unit tests for** **them. Write them into documentation or diagrams where it fits the style of the project’s** **development process. **
+**State post-conditions of operations and invariants of classes and aggregates. If assertions** **cannot be coded directly in your programming language, write automated unit tests for** **them. Write them into documentation or diagrams where it fits the style of the project’s** **development process. **
 
 Seek models with coherent sets of concepts, which lead a developer to infer the intended assertions, accelerating the learning curve and reducing the risk of contradictory code. 
 
@@ -435,7 +435,7 @@ Assertions define invariants on aggregates.
 
 Even within a module, the difficulty of interpreting a design increases wildly as dependencies are added. This adds to mental overload, limiting the design complexity a developer can handle. Implicit concepts contribute to this load even more than explicit references. 
 
-**Low coupling is fundamental to object design. When you can, go all the way. Eliminate all** **other concepts from the picture. Then the class will be completely self-­‐contained and can** **be studied and understood alone. Every such self-­‐contained class significantly eases the** **burden of understanding a module. **
+**Low coupling is fundamental to object design. When you can, go all the way. Eliminate all** **other concepts from the picture. Then the class will be completely self-contained and can** **be studied and understood alone. Every such self-contained class significantly eases the** **burden of understanding a module. **
 
 ### Closure of Operations
 
@@ -443,7 +443,7 @@ Most interesting objects end up doing things that can’t be characterized by pr
 
 Therefore: 
 
-**Where it fits, define an operation whose return type is the same as the type of its** **argument\(s\). If the implementer has state that is used in the computation, then the** **implementer is effectively an argument of the operation, so the argument\(s\) and return** **value should be of the same type as the implementer. Such an operation is closed under** **the set of instances of that type. A closed operation provides a high-­‐level interface without** **introducing any dependency on other concepts. **
+**Where it fits, define an operation whose return type is the same as the type of its** **argument\(s\). If the implementer has state that is used in the computation, then the** **implementer is effectively an argument of the operation, so the argument\(s\) and return** **value should be of the same type as the implementer. Such an operation is closed under** **the set of instances of that type. A closed operation provides a high-level interface without** **introducing any dependency on other concepts. **
 
 This pattern is most often applied to the operations of a value object. Because the life cycle of an entity has significance in the domain, you can’t just conjure up a new one to answer a question. There are operations that are closed under an entity type. You could ask an Employee object for its supervisor and get back another Employee. But in general, entities are not the sort of concepts that are likely to be the result of a computation. So, for the most part, this is an opportunity to look for in the value objects. 
 
@@ -451,7 +451,7 @@ You sometimes get halfway to this pattern. The argument matches the implementer,
 
 ### Declarative Design
 
-There can be no real guarantees in procedural software. To name just one way of evading assertions, code could have additional side effects that were not specifically excluded. No matter how model-­‐driven our design is, we stil end up writing procedures to produce the effect of the conceptual interactions. And we spend much of our time writing boilerplate code that doesn’t really add any meaning or behavior. Intention-­‐revealing interfaces and the other patterns in this chapter help, but they can never give conventional object-­‐oriented programs formal rigor. 
+There can be no real guarantees in procedural software. To name just one way of evading assertions, code could have additional side effects that were not specifically excluded. No matter how model-driven our design is, we stil end up writing procedures to produce the effect of the conceptual interactions. And we spend much of our time writing boilerplate code that doesn’t really add any meaning or behavior. Intention-revealing interfaces and the other patterns in this chapter help, but they can never give conventional object-oriented programs formal rigor. 
 
 These are some of the motivations behind declarative design. This term means many things to many people, but usually it indicates a way to write a program, or some part of a program, as a kind of executable specification. A very precise description of properties actually controls the software. In its various forms, this could be done through a reflection mechanism or at compile time through code generation \(producing conventional code automatically, based on the declaration\). This approach allows another developer to take the declaration at face value. It is an absolute guarantee. 
 
@@ -459,7 +459,7 @@ Many declarative approaches can be corrupted if the developers bypass them inten
 
 ### A Declarative Style of Design
 
-Once your design has intention-­‐revealing interfaces, side-­‐effect-­‐free functions, and assertions, you are edging into declarative territory. Many of the benefits of declarative design are obtained once you have combinable elements that communicate their meaning, and have characterized or obvious effects, or no observable effects at all. 
+Once your design has intention-revealing interfaces, side-effect-free functions, and assertions, you are edging into declarative territory. Many of the benefits of declarative design are obtained once you have combinable elements that communicate their meaning, and have characterized or obvious effects, or no observable effects at all. 
 
 A supple design can make it possible for the client code to use a declarative style of design. 
 
@@ -469,11 +469,11 @@ To il ustrate, the next section wil bring together some of the patterns in this 
 
 Creating a tight conceptual framework from scratch is something you can’t do every day. 
 
-Sometimes you discover and refine one of these over the course of the life of a project. But you can often use and adapt conceptual systems that are long established in your domain or others, some of which have been refined and distil ed over centuries. Many business applications involve accounting, for example. Accounting defines a wel -­‐developed set of entities and rules that make for an easy adaptation to a deep model and a supple design. 
+Sometimes you discover and refine one of these over the course of the life of a project. But you can often use and adapt conceptual systems that are long established in your domain or others, some of which have been refined and distil ed over centuries. Many business applications involve accounting, for example. Accounting defines a wel -developed set of entities and rules that make for an easy adaptation to a deep model and a supple design. 
 
 There are many such formalized conceptual frameworks, but my personal favorite is math. It is surprising how useful it can be to pul out some twist on basic arithmetic. Many domains include math somewhere. Look for it. Dig it out. Specialized math is clean, combinable by clear rules, and people find it easy to understand. 
 
-A real-­‐world example, “Shares Math,” was discussed in Chapter 8 of the book, Domain-­‐Driven Design. 
+A real-world example, “Shares Math,” was discussed in Chapter 8 of the book, Domain-Driven Design. 
 
 ### Conceptual Contours
 
@@ -497,7 +497,7 @@ A supple design based on a deep model yields a simple set of interfaces that com
 
 A description of a boundary \(typically a subsystem, or the work of a particular team\) within which a particular model is defined and applicable. 
 
-**upstream-­‐downstream **
+**upstream-downstream **
 
 A relationship between two groups in which the “upstream” group’s actions affect project success of the “downstream” group, but the actions of the downstream do not significantly affect projects upstream. \(e.g. If two cities are along the same river, the upstream city’s pol ution primarily affects the downstream city.\) 
 
@@ -505,25 +505,25 @@ The upstream team may succeed independently of the fate of the downstream team.
 
 **mutually dependent **
 
-A situation in which two software development projects in separate contexts must both be delivered in order for either to be considered a success. \(When two systems each rely on information or functionality of the other -­‐ something we would generally try to avoid -­‐ 
+A situation in which two software development projects in separate contexts must both be delivered in order for either to be considered a success. \(When two systems each rely on information or functionality of the other - something we would generally try to avoid - 
 
-naturally we see the projects that build them as interdependent. Yet there are also mutually dependent projects where system dependencies run only one direction. When the depended-­‐on system has little value without the dependent system and the integration with that system -­‐perhaps because this is the only place it is used -­‐ then a failure to deliver the dependent system would be a failure of both projects.\) **free **
+naturally we see the projects that build them as interdependent. Yet there are also mutually dependent projects where system dependencies run only one direction. When the depended-on system has little value without the dependent system and the integration with that system -perhaps because this is the only place it is used - then a failure to deliver the dependent system would be a failure of both projects.\) **free **
 
 A software development context in which the direction, success or failure of development work in other contexts has little effect on delivery. 
 
 ### Context Map
 
-*To plot strategy, we need a realistic, large-­‐scale view of model development extending across* *our project and others we integrate with. *
+*To plot strategy, we need a realistic, large-scale view of model development extending across* *our project and others we integrate with. *
 
 An individual bounded context leaves some problems in the absence of a global view. The context of other models may stil be vague and in flux. 
 
 People on other teams won’t be very aware of the context boundaries and wil unknowingly make changes that blur the edges or complicate the interconnections. When connections must be made between different contexts, they tend to bleed into each other. 
 
-Even when boundaries are clear, relationships with other contexts place constraints on the nature of model or pace of change that is feasible. These constraints manifest themselves primarily through non-­‐technical channels that are sometimes hard to relate to the design decisions they are affecting. 
+Even when boundaries are clear, relationships with other contexts place constraints on the nature of model or pace of change that is feasible. These constraints manifest themselves primarily through non-technical channels that are sometimes hard to relate to the design decisions they are affecting. 
 
 Therefore: 
 
-**Identify each model in play on the project and define its bounded context. This includes the** **implicit models of non-­‐object-­‐oriented subsystems. Name each bounded context, and** **make the names part of the ubiquitous language. **
+**Identify each model in play on the project and define its bounded context. This includes the** **implicit models of non-object-oriented subsystems. Name each bounded context, and** **make the names part of the ubiquitous language. **
 
 **Describe the points of contact between the models, outlining explicit translation for any** **communication, highlighting any sharing, isolation mechanisms, and levels of influence. **
 
@@ -567,7 +567,7 @@ Define a continuous integration process that wil keep the kernel model tight and
 
 ### Customer/Supplier Development
 
-*When two teams are in an upstream-­‐downstream relationship, where the upstream team* *may succeed independently of the fate of the downstream team, the needs of the* *downstream come to be addressed in a variety of ways with a wide range of consequences. *
+*When two teams are in an upstream-downstream relationship, where the upstream team* *may succeed independently of the fate of the downstream team, the needs of the* *downstream come to be addressed in a variety of ways with a wide range of consequences. *
 
 A downstream team can be helpless, at the mercy of upstream priorities. Meanwhile, the upstream team may be inhibited, worried about breaking downstream systems. The problems of the downstream team are not improved by cumbersome change request procedures with complex approval processes. And the freewheeling development of the upstream team wil stop if the downstream team has veto power over changes. 
 
@@ -579,7 +579,7 @@ Agile teams can make the downstream team play the customer role to the upstream 
 
 ### Conformist
 
-When two development teams have an upstream/down-­‐stream relationship in which the upstream has no motivation to provide for the downstream team’s needs, the downstream team is helpless. Altruism may motivate upstream developers to make promises, but they are unlikely to be fulfil ed. Belief in those good intentions leads the downstream team to make plans based on features that wil never be available. The downstream project wil be delayed until the team ultimately learns to live with what it is given. An interface tailored to the needs of the downstream team is not in the cards. 
+When two development teams have an upstream/down-stream relationship in which the upstream has no motivation to provide for the downstream team’s needs, the downstream team is helpless. Altruism may motivate upstream developers to make promises, but they are unlikely to be fulfil ed. Belief in those good intentions leads the downstream team to make plans based on features that wil never be available. The downstream project wil be delayed until the team ultimately learns to live with what it is given. An interface tailored to the needs of the downstream team is not in the cards. 
 
 Therefore: 
 
@@ -587,7 +587,7 @@ Therefore:
 
 ### Anticorruption Layer
 
-*Translation layers can be simple, even elegant, when bridging well-­‐designed bounded* *contexts with cooperative teams. But when control or communication is not adequate to pul* *off a shared kernel, partner or customer/supplier relationship, translation becomes more* *complex. The translation layer takes on a more defensive tone. *
+*Translation layers can be simple, even elegant, when bridging well-designed bounded* *contexts with cooperative teams. But when control or communication is not adequate to pul* *off a shared kernel, partner or customer/supplier relationship, translation becomes more* *complex. The translation layer takes on a more defensive tone. *
 
 A large interface with an upstream system can eventually overwhelm the intent of the downstream model altogether, causing it to be modified to resemble the other system’s model in an ad hoc fashion. The models of legacy systems are usually weak \(if not *big balls of* *mud*\), and even the exception that is clearly designed may not fit the needs of the current project, making it impractical to conform to the upstream model. Yet the integration may be very valuable or even required for the downstream project. 
 
@@ -598,15 +598,15 @@ Therefore:
 **Internally, the layer translates in one or both directions as necessary between the two** **models. **
 
 
-### Open-­‐host Service
+### Open-host Service
 
-*Typical y for each bounded context, you wil define a translation layer for each component* *with which you have to integrate that is outside the context. Where integration is one-­‐off, this* *approach of inserting a translation layer for each external system avoids corruption of the* *models with a minimum of cost. But when you find your subsystem in high demand, you may* *need a more flexible approach. *
+*Typical y for each bounded context, you wil define a translation layer for each component* *with which you have to integrate that is outside the context. Where integration is one-off, this* *approach of inserting a translation layer for each external system avoids corruption of the* *models with a minimum of cost. But when you find your subsystem in high demand, you may* *need a more flexible approach. *
 
 When a subsystem has to be integrated with many others, customizing a translator for each can bog down the team. There is more and more to maintain, and more and more to worry about when changes are made. 
 
 Therefore: 
 
-**Define a protocol that gives access to your subsystem as a set of services. Open the** **protocol so that all who need to integrate with you can use it. Enhance and expand the** **protocol to handle new integration requirements, except when a single team has** **idiosyncratic needs. Then, use a one-­‐off translator to augment the protocol for that special** **case so that the shared protocol can stay simple and coherent. **
+**Define a protocol that gives access to your subsystem as a set of services. Open the** **protocol so that all who need to integrate with you can use it. Enhance and expand the** **protocol to handle new integration requirements, except when a single team has** **idiosyncratic needs. Then, use a one-off translator to augment the protocol for that special** **case so that the shared protocol can stay simple and coherent. **
 
 This places the provider of the service in the upstream position. Each client is downstream, and typically some of them wil be conformist and some wil build anticorruption layers. A context with an open host service might have any sort of relationship to contexts other than its clients. 
 
@@ -618,13 +618,13 @@ Direct translation to and from the existing domain models may not be a good solu
 
 Therefore: 
 
-**Use a well-­‐documented shared language that can express the necessary domain** **information as a common medium of communication, translating as necessary into and out** **of that language. **
+**Use a well-documented shared language that can express the necessary domain** **information as a common medium of communication, translating as necessary into and out** **of that language. **
 
 Many industries establish published languages in the form of data interchange standards. 
 
 Project teams also develop their own for use within their organization. 
 
-Published language is often combined with open-­‐host service. 
+Published language is often combined with open-host service. 
 
 
 ### Separate Ways
@@ -643,7 +643,7 @@ As we survey existing software systems, trying to understand how distinct models
 
 It is easy to get bogged down in an attempt to describe the context boundaries of models in systems where there simply are no boundaries. 
 
-Well-­‐defined context boundaries only emerge as a result of intel ectual choices and social forces \(even though the people creating the systems may not always have been consciously aware of these causes at the time\). When these factors are absent, or disappear, multiple conceptual systems and mix together, making definitions and rules ambiguous or contradictory. The systems are made to work by contingent logic as features are added. 
+Well-defined context boundaries only emerge as a result of intel ectual choices and social forces \(even though the people creating the systems may not always have been consciously aware of these causes at the time\). When these factors are absent, or disappear, multiple conceptual systems and mix together, making definitions and rules ambiguous or contradictory. The systems are made to work by contingent logic as features are added. 
 
 Dependencies crisscross the software. Cause and effect become more and more difficult to trace. Eventually the software congeals into a big ball of mud. 
 
@@ -687,11 +687,11 @@ Therefore:
 
 **Identify cohesive subdomains that are not the motivation for your project. Factor out** **generic models of these subdomains and place them in separate modules. Leave no trace of** **your specialties in them. **
 
-**Once they have been separated, give their continuing development lower priority than the** **core domain, and avoid assigning your core developers to the tasks \(because they will gain** **little domain knowledge from them\). Also consider off-­‐the-­‐shelf solutions or published** **models for these generic subdomains. **
+**Once they have been separated, give their continuing development lower priority than the** **core domain, and avoid assigning your core developers to the tasks \(because they will gain** **little domain knowledge from them\). Also consider off-the-shelf solutions or published** **models for these generic subdomains. **
 
 ### Domain Vision Statement
 
-At the beginning of a project, the model usually doesn’t even exist, yet the need to focus its development is already there. In later stages of development, there is a need for an explanation of the value of the system that does not require an in-­‐depth study of the model. 
+At the beginning of a project, the model usually doesn’t even exist, yet the need to focus its development is already there. In later stages of development, there is a need for an explanation of the value of the system that does not require an in-depth study of the model. 
 
 Also, the critical aspects of the domain model may span multiple bounded contexts, but by definition these distinct models can’t be structured to show their common focus. 
 
@@ -727,7 +727,7 @@ Therefore:
 
 **Partition a conceptually cohesive mechanism into a separate lightweight framework. **
 
-**Particularly watch for formalisms or well-­‐documented categories of algorithms. Expose the** **capabilities of the framework with an intention-­‐revealing interface. Now the other** **elements of the domain can focus on expressing the problem \(“what”\), delegating the** **intricacies of the solution \(“how”\) to the framework. **
+**Particularly watch for formalisms or well-documented categories of algorithms. Expose the** **capabilities of the framework with an intention-revealing interface. Now the other** **elements of the domain can focus on expressing the problem \(“what”\), delegating the** **intricacies of the solution \(“how”\) to the framework. **
 
 **Factoring out generic subdomains reduces clutter, and cohesive mechanisms serve to** **encapsulate complex operations. This leaves behind a more focused model, with fewer** **distractions that add no particular value to the way users conduct their activities. But you** **are unlikely ever to find good homes for everything in the domain model that is not core. **
 
@@ -741,7 +741,7 @@ Designers can’t clearly see the most important relationships, leading to a wea
 
 Therefore: 
 
-**Refactor the model to separate the core concepts from supporting players \(including ill-­‐**
+**Refactor the model to separate the core concepts from supporting players \(including ill-**
 
 **defined ones\) and strengthen the cohesion of the core while reducing its coupling to other** **code. Factor all generic or supporting elements into other objects and place them into** **other packages, even if this means refactoring the model in ways that separate highly** **coupled elements. **
 
@@ -755,11 +755,11 @@ Therefore:
 
 **Identify the most fundamental differentiating concepts in the model and factor them into** **distinct classes, abstract classes, or interfaces. Design this abstract model so that it** **expresses most of the interaction between significant components. Place this abstract** **overall model in its own module, while the specialized, detailed implementation classes are** **left in their own modules defined by subdomain. **
 
-## VI. Large-­‐scale Structure for Strategic Design
+## VI. Large-scale Structure for Strategic Design
 
 In a large system without any overarching principle that allows elements to be interpreted in terms of their role in patterns that span the whole design, developers cannot see the forest for the trees. We need to be able to understand the role of an individual part in the whole without delving into the details of the whole. 
 
-A “large-­‐scale structure” is a language that lets you discuss and understand the system in broad strokes. A set of high-­‐level concepts or rules, or both, establishes a pattern of design for an entire system. This organizing principle can guide design as wel as aid understanding. 
+A “large-scale structure” is a language that lets you discuss and understand the system in broad strokes. A set of high-level concepts or rules, or both, establishes a pattern of design for an entire system. This organizing principle can guide design as wel as aid understanding. 
 
 It helps coordinate independent work because there is a shared concept of the big picture: how the roles of various parts shape the whole. 
 
@@ -769,17 +769,17 @@ Therefore:
 
 ### Evolving Order
 
-Design free-­‐for-­‐alls produce systems no one can make sense of as a whole, and they are very difficult to maintain. But architectures can straitjacket a project with up-­‐front design assumptions and take too much power away from the developers/designers of particular parts of the application. Soon, developers wil dumb down the application to fit the structure, or they wil subvert it and have no structure at all, bringing back the problems of uncoordinated development. 
+Design free-for-alls produce systems no one can make sense of as a whole, and they are very difficult to maintain. But architectures can straitjacket a project with up-front design assumptions and take too much power away from the developers/designers of particular parts of the application. Soon, developers wil dumb down the application to fit the structure, or they wil subvert it and have no structure at all, bringing back the problems of uncoordinated development. 
 
 Therefore: 
 
-**Let this conceptual large-­‐scale structure evolve with the application, possibly changing to a** **completely different type of structure along the way. Don’t over constrain the detailed** **design and model decisions that must be made with detailed knowledge. **
+**Let this conceptual large-scale structure evolve with the application, possibly changing to a** **completely different type of structure along the way. Don’t over constrain the detailed** **design and model decisions that must be made with detailed knowledge. **
 
-**Large-­‐scale structure should be applied when a structure can be found that greatly clarifies** **the system without forcing unnatural constraints on model development. Because an ill-­‐**
+**Large-scale structure should be applied when a structure can be found that greatly clarifies** **the system without forcing unnatural constraints on model development. Because an ill-**
 
 **fitting structure is worse than none, it is best not to shoot for comprehensiveness, but** **rather to find a minimal set that solves the problems that have emerged. Less is more. **
 
-**What follows is a set of four particular patterns of large-­‐scale structure that emerge on** **some projects and are representative of this kind of pattern. **
+**What follows is a set of four particular patterns of large-scale structure that emerge on** **some projects and are representative of this kind of pattern. **
 
 ### System Metaphor
 
@@ -789,17 +789,17 @@ Software designs tend to be very abstract and hard to grasp. Developers and user
 
 Therefore: 
 
-**When a concrete analogy to the system emerges that captures the imagination of team** **members and seems to lead thinking in a useful direction, adopt it as a large-­‐scale** **structure. Organize the design around this metaphor and absorb it into the ubiquitous** **language. The system metaphor should both facilitate communication about the system** **and guide development of it. This increases consistency in different parts of the system,** **potentially even across different bounded contexts. But because all metaphors are inexact,** **continually reexamine the metaphor for overextension or inaptness, and be ready to drop** **it if it gets in the way. **
+**When a concrete analogy to the system emerges that captures the imagination of team** **members and seems to lead thinking in a useful direction, adopt it as a large-scale** **structure. Organize the design around this metaphor and absorb it into the ubiquitous** **language. The system metaphor should both facilitate communication about the system** **and guide development of it. This increases consistency in different parts of the system,** **potentially even across different bounded contexts. But because all metaphors are inexact,** **continually reexamine the metaphor for overextension or inaptness, and be ready to drop** **it if it gets in the way. **
 
 ### Responsibility Layers
 
-In object-­‐oriented design, individual objects are assigned narrow sets of related responsibilities. Responsibility-­‐driven design also applies to larger scales. 
+In object-oriented design, individual objects are assigned narrow sets of related responsibilities. Responsibility-driven design also applies to larger scales. 
 
 When each individual object has handcrafted responsibilities, there are no guidelines, no uniformity, and no ability to handle large swaths of the domain together. To give coherence to a large model, it is useful to impose some structure on the assignment of those responsibilities. 
 
 Therefore: 
 
-**Look at the conceptual dependencies in your model and the varying rates and sources of** **change of different parts of your domain. If you identify natural strata in the domain, cast** **them as broad abstract responsibilities. These responsibilities should tell a story of the** **high-­‐level purpose and design of your system. Refactor the model so that the** **responsibilities of each domain object, aggregate, and module fit neatly within the** **responsibility of one layer. **
+**Look at the conceptual dependencies in your model and the varying rates and sources of** **change of different parts of your domain. If you identify natural strata in the domain, cast** **them as broad abstract responsibilities. These responsibilities should tell a story of the** **high-level purpose and design of your system. Refactor the model so that the** **responsibilities of each domain object, aggregate, and module fit neatly within the** **responsibility of one layer. **
 
 ### Knowledge Level
 
@@ -809,9 +809,9 @@ In an application in which the roles and relationships between entities vary in 
 
 Therefore: 
 
-**Create a distinct set of objects that can be used to describe and constrain the structure and** **behavior of the basic model. Keep these concerns separate as two “levels,” one very** **concrete, the other reflecting rules and knowledge that a user or super-­‐user is able to** **customize. **
+**Create a distinct set of objects that can be used to describe and constrain the structure and** **behavior of the basic model. Keep these concerns separate as two “levels,” one very** **concrete, the other reflecting rules and knowledge that a user or super-user is able to** **customize. **
 
-*\(see Fowler, M. 1997. Analysis Patterns: Reusable Object Models, Addison-­‐Wesley.\)* 
+*\(see Fowler, M. 1997. Analysis Patterns: Reusable Object Models, Addison-Wesley.\)* 
 
 ### Pluggable Component Framework
 
