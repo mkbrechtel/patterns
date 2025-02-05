@@ -1,20 +1,8 @@
-Domain-­‐Driven Design 
-
-Reference 
-
-Definitions and Pattern Summaries 
-
-****
-
-****
+# Domain-Driven Design Reference – Definitions and Pattern Summaries 
 
 Eric Evans 
 
 Domain Language, Inc. 
-
-
-
-
 
 © 2015 Eric Evans 
 
@@ -22,130 +10,76 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 
 To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/. 
 
+## Contents
 
+- [Acknowledgements](#acknowledgements)
+- [Definitions](#definitions)
+- [Pattern Language Overview](#pattern-language-overview)
 
+**I. Putting the Model to Work**
 
+- [Bounded Context](#bounded-context)
+- [Ubiquitous Language](#ubiquitous-language)  
+- [Continuous Integration](#continuous-integration)
+- [Model-Driven Design](#model-driven-design)
+- [Hands-on Modelers](#hands-on-modelers)
+- [Refactoring Toward Deeper Insight](#refactoring-toward-deeper-insight)
 
-**Contents **
+**II. Building Blocks of a Model-Driven Design**
 
-Acknowledgements ................................................................................................................ iv Definitions .............................................................................................................................. vi Pattern Language Overview .................................................................................................. vii **I. ** **Putting the Model to Work ......................................................................... 1** 
+- [Layered Architecture](#layered-architecture)
+- [Entities](#entities) 
+- [Value Objects](#value-objects)
+- [Domain Events *](#domain-events)
+- [Services](#services)
+- [Modules](#modules)
+- [Aggregates](#aggregates)
+- [Repositories](#repositories)
+- [Factories](#factories)
 
-Bounded Context .................................................................................................................... 2 
+**III. Supple Design**
 
-Ubiquitous Language ............................................................................................................... 3 
+- [Intention-Revealing Interfaces](#intention-revealing-interfaces)
+- [Side-Effect-Free Functions](#side-effect-free-functions) 
+- [Assertions](#assertions)
+- [Standalone Classes](#standalone-classes)
+- [Closure of Operations](#closure-of-operations)
+- [Declarative Design](#declarative-design)
+- [Drawing on Established Formalisms](#drawing-on-established-formalisms)
+- [Conceptual Contours](#conceptual-contours)
 
-Continuous Integration ........................................................................................................... 5 
+**IV. Context Mapping for Strategic Design**
 
-Model-­‐Driven Design ............................................................................................................... 6 
+- [Context Map](#context-map)
+- [Partnership *](#partnership)
+- [Shared Kernel](#shared-kernel)
+- [Customer/Supplier Development](#customer-supplier-development) 
+- [Conformist](#conformist)
+- [Anticorruption Layer](#anticorruption-layer)
+- [Open-host Service](#open-host-service)
+- [Published Language](#published-language)
+- [Separate Ways](#separate-ways)
+- [Big Ball of Mud *](#big-ball-of-mud)
 
-Hands-­‐on Modelers ................................................................................................................. 7 
+**V. Distillation for Strategic Design**
 
-Refactoring Toward Deeper Insight ........................................................................................ 8 
+- [Core Domain](#core-domain)
+- [Generic Subdomains](#generic-subdomains)
+- [Domain Vision Statement](#domain-vision-statement)
+- [Highlighted Core](#highlighted-core)
+- [Cohesive Mechanisms](#cohesive-mechanisms)
+- [Segregated Core](#segregated-core)
+- [Abstract Core](#abstract-core)
 
-**II. ** **Building Blocks of a Model-­‐Driven Design .................................................. 9** 
+**VI. Large-scale Structure for Strategic Design**
 
-Layered Architecture ............................................................................................................. 10 
-
-Entities .................................................................................................................................. 11 
-
-Value Objects ........................................................................................................................ 12 
-
-Domain Events \* ................................................................................................................... 13 
-
-Services ................................................................................................................................. 14 
-
-Modules ................................................................................................................................ 15 
-
-Aggregates ............................................................................................................................. 16 
-
-Repositories ........................................................................................................................... 17 
-
-Factories ................................................................................................................................ 18 
-
-**III. ** **Supple Design ........................................................................................... 19** 
-
-Intention-­‐Revealing Interfaces .............................................................................................. 20 
-
-Side-­‐Effect-­‐Free Functions .................................................................................................... 21 
-
-Assertions .............................................................................................................................. 22 
-
-Standalone Classes ................................................................................................................ 23 
-
-Closure of Operations ........................................................................................................... 24 
-
-Declarative Design ................................................................................................................. 25 
-
-
-
-ii 
-
-
-
-Drawing on Established Formalisms ...................................................................................... 26 
-
-Conceptual Contours ............................................................................................................. 27 
-
-**IV. ** **Context Mapping for Strategic Design ...................................................... 28** 
-
-Context Map .......................................................................................................................... 29 
-
-Partnership \* ......................................................................................................................... 30 
-
-Shared Kernel ........................................................................................................................ 31 
-
-Customer/Supplier Development ......................................................................................... 32 
-
-Conformist ............................................................................................................................. 33 
-
-Anticorruption Layer ............................................................................................................. 34 
-
-Open-­‐host Service ................................................................................................................. 35 
-
-Published Language ............................................................................................................... 36 
-
-Separate Ways ...................................................................................................................... 37 
-
-Big Ball of Mud \* ................................................................................................................... 38 
-
-**V. ** **Distillation for Strategic Design ................................................................. 39** 
-
-Core Domain ......................................................................................................................... 40 
-
-Generic Subdomains ............................................................................................................. 41 
-
-Domain Vision Statement ..................................................................................................... 42 
-
-Highlighted Core .................................................................................................................... 43 
-
-Cohesive Mechanisms ........................................................................................................... 44 
-
-Segregated Core .................................................................................................................... 45 
-
-Abstract Core ......................................................................................................................... 46 
-
-**VI. ** **Large-­‐scale Structure for Strategic Design ................................................ 47** 
-
-Evolving Order ....................................................................................................................... 48 
-
-System Metaphor .................................................................................................................. 49 
-
-Responsibility Layers ............................................................................................................. 50 
-
-Knowledge Level ................................................................................................................... 51 
-
-Pluggable Component Framework ........................................................................................ 52 
-
-****
+- [Evolving Order](#evolving-order)
+- [System Metaphor](#system-metaphor) 
+- [Responsibility Layers](#responsibility-layers)
+- [Knowledge Level](#knowledge-level)
+- [Pluggable Component Framework](#pluggable-component-framework)
 
 \* New term introduced since the 2004 book. 
-
-
-
-
-
-iii 
-
 
 
 **Acknowledgements **
